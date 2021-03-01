@@ -28,8 +28,7 @@
       <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
       <!-- <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2> -->
       {% capture page_title %}{{ page.name | split: "." | first }}{% endcapture %}
-      <h2 class="project-dir">/ <a href="{{ site.url | default: '/' | absolute_url }}">{{ site.title | default: 'Main Page' }}</a> / <a href="{{ page.url | absolute_url | default: './' }}">{{ page.title | default: page_title }}</a></h2>
-
+      <h2 class="project-dir">/ <a href="{{ site.github.url | default: '../' | relative_url }}">{{ site.title | default: 'Main Page' }}</a> / <a href="{{ page.url | absolute_url | default: './' }}">{{ page.title | default: page_title }}</a></h2>
     </header>
 
     <aside class="sidebar">
