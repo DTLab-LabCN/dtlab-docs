@@ -1,11 +1,16 @@
 ---
-layout: default
+layout: doc
 title: Another page
-description: This is just another page
 ---
 
 ## Welcome to another page
 
 _yay_
+
+### Sub-head
+
+> Nice!
+
+## Another welcome to page
 
 [back](./)

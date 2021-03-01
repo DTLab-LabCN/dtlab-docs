@@ -1,6 +1,7 @@
 @import "normalize";
 @import "rouge-github";
 @import "variables";
+@import "sidebar";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
 @mixin large {
@@ -23,6 +24,7 @@
 
 * {
   box-sizing: border-box;
+  scrollbar-color: $scrollbar-fg-color $scrollbar-bg-color;
 }
 
 body {
@@ -32,6 +34,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: $body-text-color;
+  background-color: $body-bg-color;
 }
 
 #skip-to-content {
@@ -159,6 +162,33 @@ a {
   }
 }
 
+.project-dir {
+  margin: .2rem;
+  font-weight: normal;
+  opacity: .7;
+  margin: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 80vw;
+  white-space: nowrap;
+
+  a {
+    color: #f8f8f8;
+  } 
+
+  @include large {
+    font-size: 1.1rem;
+  }
+
+  @include medium {
+    font-size: 1rem;
+  }
+
+  @include small {
+    font-size: .9rem;
+  }
+}
+
 .main-content {
   word-wrap: break-word;
 
@@ -251,6 +281,9 @@ a {
 
   .highlight {
     margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    border-color: $highlight-border-color;
+    background-color: $highlight-bg-color;
 
     pre {
       margin-bottom: 0;
@@ -264,7 +297,6 @@ a {
     overflow: auto;
     font-size: 0.9rem;
     line-height: 1.45;
-    border-radius: 0.3rem;
     -webkit-overflow-scrolling: touch;
   }
 
@@ -295,7 +327,7 @@ a {
     padding: 0 1rem;
     margin-left: 0;
     color: $blockquote-text-color;
-    border-left: 0.3rem solid $border-color;
+    border-left: 0.3rem solid $blockquote-border-color;
 
     > :first-child {
       margin-top: 0;
