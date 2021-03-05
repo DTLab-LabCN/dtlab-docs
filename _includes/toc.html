@@ -125,8 +125,8 @@
 
         {% capture anchorBody %}{% if include.sanitize %}{{ header | strip_html }}{% else %}{{ header }}{% endif %}{% endcapture %}
         
-        {% comment %} strip_par added by Bilal2453, and doesn't exists in the official repo {% endcomment %}
-        {% capture anchorBody %}{% if include.strip_par %}{{ anchorBody | split: "(" | first }}{% else %}{{ anchorBody }}{% endif %}{% endcapture %}
+        <!-- strip_par added by Bilal2453, and doesn't exists in the original repo  -->
+        {% capture anchorBody %}{% if include.strip_par %}{{ anchorBody | split: "(" | first | strip}}{% else %}{{ anchorBody }}{% endif %}{% endcapture %}
 
         {% if htmlID %}
             {% capture anchorAttributes %} href="{% if baseURL %}{{ baseURL }}{% endif %}#{{ htmlID }}"{% endcapture %}

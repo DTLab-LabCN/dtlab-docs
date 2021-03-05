@@ -1,7 +1,6 @@
 @import "normalize";
 @import "rouge-github";
 @import "variables";
-@import "sidebar";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
 @mixin large {
@@ -189,6 +188,50 @@ a {
   }
 }
 
+.sidebar {
+  position: absolute;
+  white-space: nowrap;
+  
+  @include large {
+    font-size: 1.24em;
+    margin: 3.4rem 0 0 1rem;
+    max-width: 25vmax;
+  }
+  
+  @include medium {
+    font-size: 1.17em;
+    margin: 3.4rem 0 0 .3rem;
+    max-width: 21vmax;
+  }
+
+  @include small {
+    display: none;
+  }
+
+  li, ul {
+    list-style-type: none;
+    padding-left: 0.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  // Work in progress:
+  // li.selected {
+  //   border-left: black solid 1px;
+  //   background-color: red;
+  // }
+}
+
+.main-wrapper {
+  @include large {
+    margin-left: 15rem;
+  }
+
+  @include medium {
+    margin-left: 10rem;
+  }
+}
+
 .main-content {
   word-wrap: break-word;
 
@@ -214,12 +257,12 @@ a {
   }
   
   kbd {
-    background-color: #fafbfc;
-    border: 1px solid #c6cbd1;
-    border-bottom-color: #959da5;
+    background-color: #212426;
+    border: 1px solid #3f4446;
+    border-bottom-color: #4f5659;
     border-radius: 3px;
-    box-shadow: inset 0 -1px 0 #959da5;
-    color: #444d56;
+    box-shadow: inset 0 -1px 0 #868f99;
+    color: #bbb7b1;
     display: inline-block;
     font-size: 11px;
     line-height: 10px;

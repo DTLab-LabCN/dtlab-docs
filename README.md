@@ -6,7 +6,7 @@ Cayman-Docs is a fork of the Jekyll theme [Cayman](https://github.com/pages-them
 
 ## Todo
 
-1. More responsive/scroll-based navigator (when JS is enabled).
+1. Scroll-based navigator (when JS is enabled).
 2. Implementing heading indention.
 3. General styling enhancements.
 
