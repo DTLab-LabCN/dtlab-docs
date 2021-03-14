@@ -112,6 +112,8 @@ a {
   text-align: center;
   background-color: $header-bg-color;
   background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  position: relative;
+  z-index: 10;
 
   @include large {
     padding: 5rem 6rem;
@@ -188,9 +190,12 @@ a {
   }
 }
 
-.sidebar {
+#sidebar {
   position: absolute;
+  overflow: hidden;
+  max-height: 100%;
   white-space: nowrap;
+  scroll-behavior: smooth;
   
   @include large {
     font-size: 1.24em;
@@ -215,11 +220,28 @@ a {
     text-overflow: ellipsis;
   }
 
-  // Work in progress:
-  // li.selected {
-  //   border-left: black solid 1px;
-  //   background-color: red;
-  // }
+  a {
+    padding: .1rem .5rem;
+    &:hover {
+      color: $section-headings-color;
+    }
+  }
+
+  .active {
+    visibility: visible;
+  }
+
+  .selected {
+    > a {
+      border-left: $header-bg-color solid 3px;
+      border-radius: 2px 6px 6px 2px;
+      background-color: fade-out($header-bg-color, 0.85);
+    }
+    > ul {
+      display: block;
+      visibility: visible;
+    }
+  }
 }
 
 .main-wrapper {
