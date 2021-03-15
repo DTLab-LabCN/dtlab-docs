@@ -5,3 +5,4 @@ Gemfile.lock
 .jekyll-cache
 testing
 *.code-workspace
+.jekyll-metadata
