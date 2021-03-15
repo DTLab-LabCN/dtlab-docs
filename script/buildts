@@ -1,3 +1,0 @@
-#!/bin/sh
-
-tsc _ts/*.ts --outDir assets/js/ --alwaysStrict --target es2019

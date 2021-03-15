@@ -2,7 +2,6 @@
 
 set -e
 
-script/buildts
 bundle exec jekyll build
 bundle exec htmlproofer ./_site --check-html --check-sri --url-ignore "https://fonts.gstatic.com"
 bundle exec rubocop -D
