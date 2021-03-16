@@ -1,14 +1,17 @@
 # The Cayman-Docs theme
 
-Cayman-Docs is a fork of the Jekyll theme [Cayman](https://github.com/pages-themes/cayman) for GitHub Pages. This theme was edited from the original Cayman to be more docs friendly; This is achieved by defaulting the layout on dark mode, adding content navigation, and friendly layer indention. Originaly made for [coro-docs](https://bilal2453.github.io/coro-docs/).
+Cayman-Docs is a fork of the Jekyll theme [Cayman](https://github.com/pages-themes/cayman) for GitHub Pages. This theme was edited from the original Cayman to be more docs friendly; This is achieved by defaulting the layout on dark mode, adding content navigation, and friendly layer indention. Originally made for [coro-docs](https://bilal2453.github.io/coro-docs/).
 
 ![Thumbnail of Cayman](thumbnail.png)
 
 ## Todo
 
-1. Scroll-based navigator (when JS is enabled).
-2. Implementing heading indention.
-3. General styling enhancements.
+1. Implementing heading indention.
+2. General styling enhancements.
+3. Add anchor element to next of each header.
+4. Fix navigator not hiding parent when the user scrolls to the top of the page.
+5. Do something with the original Cayman gemfiles.
+6. Make navigator style customizable through Sass variables.
 
 ## Usage
 
@@ -37,6 +40,30 @@ Additionally, you may choose to set the following optional variables:
 show_downloads: ["true" or "false" to indicate whether to provide a download URL]
 google_analytics: [Your Google Analytics tracking ID]
 ```
+
+Cayman-Docs also provides additional variables to control varies stuff, such as:
+
+- Navigation and Table of Contents generation:
+```yml
+navigation:
+  name_over_title: [true or false to indicate whether to use the page file name instead of title in the header navigator]
+  toc_parameter: [all toc module parameters can be optionally passed over here]
+```
+
+### Table of Content parameters
+
+  * sanitize      (bool)   : false  - when set to true, the headers will be stripped of any HTML in the TOC
+  * class         (string) :   ''   - a CSS class assigned to the TOC
+  * id            (string) :   ''   - an ID to assigned to the TOC
+  * h_min         (int)    :   1    - the minimum TOC header level to use; any header lower than this value will be ignored
+  * h_max         (int)    :   6    - the maximum TOC header level to use; any header greater than this value will be ignored
+  * ordered       (bool)   : false  - when set to true, an ordered list will be outputted instead of an unordered list
+  * item_class    (string) :   ''   - add custom class(es) for each list item; has support for '%level%' placeholder, which is the current heading level
+  * submenu_class (string) :   ''   - add custom class(es) for each child group of headings; has support for '%level%' placeholder which is the current "submenu" heading level
+  * base_url      (string) :   ''   - add a base url to the TOC links for when your TOC is on another page than the actual content
+  * anchor_class  (string) :   ''   - add custom class(es) for each anchor element
+  * skip_no_ids   (bool)   : false  - skip headers that do not have an `id` attribute
+  * strip_par     (bool)   : false  - strips any parenthesis at the end of title. E.x: `find(str, index)` -> `find`.
 
 ### Stylesheet
 
