@@ -40,8 +40,19 @@ function scrollSpy() {
   
   let anchor = anchors.find((elm) => elm.hash === "#" + current.id);
   if (!anchor) return;
-  anchor.scrollIntoView({ behavior: "smooth", "block": "nearest" });
-  
+
+  // Scroll the sidebar if necessary
+  if (sidebar.scrollTop + sidebar.offsetHeight <= anchor.offsetTop + anchor.offsetHeight)
+    sidebar.scrollBy({
+      top: anchor.offsetHeight * 2,
+      behavior: "smooth"
+    });
+  else if (sidebar.scrollTop > anchor.offsetTop)
+    sidebar.scrollBy({
+      top: -(anchor.offsetHeight * 2),
+      behavior: "smooth"
+    });
+
   // Deactivate previous anchors
   iterParents(lastAnchor, elm => {
     if (elm == anchor.parentElement.parentElement)
