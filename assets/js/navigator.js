@@ -30,10 +30,13 @@ function iterParents(elm, cb) {
 let selected, lastAnchor;
 function scrollSpy() {
   let current = elements.find((elm) => window.scrollY >= elm.offsetTop - 75);
-  if (!current) { // Deactivate all anchors
-    iterParents(lastAnchor, (elm) => { elm.nodeName === "UL" && elm.classList.remove("active"); });
+
+  if (current === selected) {
     return;
-  } else if (current === selected) {
+  } else if (!current) {
+    iterParents(lastAnchor, (elm) => { elm.nodeName === "UL" && elm.classList.remove("active"); });
+    lastAnchor?.parentElement.classList.remove("selected");
+    selected = undefined;
     return;
   }
   selected = current;
@@ -60,7 +63,7 @@ function scrollSpy() {
     if (elm.nodeName === "UL")
     elm.classList.remove("active");
   });
-  lastAnchor === null || lastAnchor === void 0 ? void 0 : lastAnchor.parentElement.classList.remove("selected");
+  lastAnchor?.parentElement.classList.remove("selected");
   
   // Activate new anchor
   iterParents(anchor, (elm) => {

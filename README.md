@@ -9,9 +9,8 @@ Cayman-Docs is a fork of the Jekyll theme [Cayman](https://github.com/pages-them
 1. Implementing heading indention.
 2. General styling enhancements.
 3. Add anchor element to next of each header.
-4. Fix navigator not hiding parent when the user scrolls to the top of the page.
-5. Do something with the original Cayman gemfiles.
-6. Make navigator style customizable through Sass variables.
+4. Do something with the original Cayman gemfiles.
+5. Make navigator style customizable through Sass variables.
 
 ## Usage
 
