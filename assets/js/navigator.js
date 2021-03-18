@@ -46,31 +46,25 @@ function scrollSpy() {
 
   // Scroll the sidebar if necessary
   if (sidebar.scrollTop + sidebar.offsetHeight <= anchor.offsetTop + anchor.offsetHeight)
-    sidebar.scrollBy({
-      top: anchor.offsetHeight * 2,
-      behavior: "smooth"
-    });
+    sidebar.scrollTo(0, anchor.offsetTop - sidebar.offsetHeight/1.2);
   else if (sidebar.scrollTop > anchor.offsetTop)
-    sidebar.scrollBy({
-      top: -(anchor.offsetHeight * 2),
-      behavior: "smooth"
-    });
+    sidebar.scrollTo(0, anchor.offsetTop - anchor.offsetHeight*1.2);
 
   // Deactivate previous anchors
   iterParents(lastAnchor, elm => {
     if (elm == anchor.parentElement.parentElement)
-    return false;
+      return false;
     if (elm.nodeName === "UL")
-    elm.classList.remove("active");
+      elm.classList.remove("active");
   });
   lastAnchor?.parentElement.classList.remove("selected");
   
   // Activate new anchor
   iterParents(anchor, (elm) => {
     if (elm.classList.contains('active'))
-    return false;
+      return false;
     if (elm.nodeName === "UL")
-    elm.classList.add("active");
+      elm.classList.add("active");
   });
   anchor.parentElement.classList.add("selected");
   
