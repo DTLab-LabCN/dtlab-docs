@@ -220,10 +220,6 @@ a {
     text-overflow: ellipsis;
   }
 
-  li:last-child {
-    margin-bottom: 1rem;
-  }
-
   a {
     padding: .1rem .5rem;
     &:hover {
@@ -451,23 +447,25 @@ a {
   }
 }
 
+#content-wrapper {
+  position: relative;
+}
+
 .site-footer {
   padding-top: 2rem;
   border-top: solid 1px $hr-border-color;
+  margin-top: 1rem;
 
   @include large {
     font-size: 1rem;
-    margin-top: 70vh;
   }
 
   @include medium {
     font-size: 1rem;
-    margin-top: 50vh;
   }
 
   @include small {
     font-size: 0.9rem;
-    margin-top: 1rem;
   }
 }
 
