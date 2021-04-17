@@ -277,6 +277,24 @@ a {
     padding: 2rem 1rem;
     font-size: 1rem;
   }
+
+  #content-wrapper .heading-anchor {
+    transition-duration: 400ms;
+    text-decoration-style: dashed;
+    font-size: 1.14em;
+
+    &:hover {
+      color: lighten($body-link-color, 15)
+    }
+
+    &:active {
+      color: $section-headings-color;
+    }
+
+    &[selected=true] {
+      color: $body-link-color;
+    }
+  }
   
   kbd {
     background-color: #212426;

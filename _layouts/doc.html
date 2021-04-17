@@ -42,7 +42,9 @@
 
   <div class="main-wrapper">
     <main id="content" class="main-content" role="main">
-      <div id="content-wrapper">{{ content }}</div>
+      <div id="content-wrapper">
+        {% include anchor_headings.html html=content anchorBody="#" beforeHeading=true anchorClass="heading-anchor" anchorTitle="%heading%" %}
+      </div>
   
       <footer class="site-footer">
         {% if site.github.is_project_page %}
@@ -54,6 +56,8 @@
     </main>
   </div>
 
+  <script src="{{ '/assets/js/js_enabled.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+  <script src="{{ '/assets/js/anchor_spy.js?v=' | append: site.github.build_revision | relative_url }}"></script>
   <script src="{{ '/assets/js/navigator.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 </body>
 
