@@ -10,8 +10,6 @@
     }
     #nav ul:not(:first-child):not(.active) {
       visibility: hidden;
-    }
-    #nav ul:not(.active) {
       display: none !important;
     }
   `
