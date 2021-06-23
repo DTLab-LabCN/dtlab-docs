@@ -11,7 +11,7 @@
     #nav ul:not(:first-child):not(.active) {
       visibility: hidden;
     }
-    li > ul:not(.active) {
+    li ul:not(.active) {
       display: none;
     }
   `
