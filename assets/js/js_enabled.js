@@ -11,8 +11,8 @@
     #nav ul:not(:first-child):not(.active) {
       visibility: hidden;
     }
-    li ul:not(.active) {
-      display: none;
+    #nav ul:not(.active) {
+      display: none !important;
     }
   `
   document.head.appendChild(stylesheet)
