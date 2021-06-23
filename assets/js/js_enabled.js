@@ -8,7 +8,7 @@
     #content-wrapper .heading-anchor {
       color: #606060;
     }
-    ul:not(:first-child):not(.active) {
+    #nav ul:not(:first-child):not(.active) {
       visibility: hidden;
     }
     li > ul:not(.active) {
