@@ -2,9 +2,13 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+For the actual documentation layout, see this [example page](./another-page.html).
 
-[Link to another page](./another-page.html).
+This layout is the default Cayman layout.
+
+----
+
+Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 There should be whitespace between paragraphs.
 
