@@ -6,21 +6,25 @@ Cayman-Docs is a fork of the Jekyll theme [Cayman](https://github.com/pages-them
 
 ## Todo
 
-1. Implementing heading indention.
-2. General styling enhancements.
-3. Add anchor element to next of each header.
-4. Do something with the original Cayman gemfiles.
-5. Make navigator style customizable through Sass variables.
+- [ ] Implementing heading indention.
+- [ ] General styling enhancements.
+- [ ] Add anchor element to next of each header.
+- [ ] Do something with the original Cayman gemfiles, perhaps delete them.
+- [ ] Make navigator style customizable through Sass variables.
 
 ## Usage
 
 To use the Cayman-Docs theme:
 
+1. If a `_config.yml` file doesn't already exists in your GitHub Pages branch, create it.
+    - Make sure you are doing this in the branch set for your GitHub Pages! It is by default *not* the master/main branch.
 1. Add the following to your site's `_config.yml`:
 
     ```yml
     remote_theme: Bilal2453/cayman-docs
     ```
+    - Make sure the `theme` field is not set!
+1. There are more available options for the `_config.yml`, see below.
 
 ## Customizing
 
