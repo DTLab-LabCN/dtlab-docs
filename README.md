@@ -7,9 +7,6 @@ This repo is a fork of Cayman-Docs, which is a fork of the Jekyll theme [Cayman]
 - [ ] Adjust `_config.yml` as needed.
 - [ ] Do more!
 
-show_downloads: ["true" or "false" to indicate whether to provide a download URL]
-google_analytics: [Your Google Analytics tracking ID]
-```
 
 ## Template instructions
 Navigation and Table of Contents generation:
