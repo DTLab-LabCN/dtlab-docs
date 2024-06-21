@@ -1,52 +1,18 @@
-# The Cayman-Docs theme
+# DTT Documentation
 
-Cayman-Docs is a fork of the Jekyll theme [Cayman](https://github.com/pages-themes/cayman) for GitHub Pages. This theme was edited from the original Cayman to be more docs friendly; This is achieved by defaulting the layout on dark mode, adding content navigation, and friendly layer indention. Originally made for [coro-docs](https://bilal2453.github.io/coro-docs/).
-
-![Thumbnail of Cayman](thumbnail.png)
+This repo is a form of Cayman-Docs, which is a fork of the Jekyll theme [Cayman](https://github.com/pages-themes/cayman) for GitHub Pages. 
 
 ## Todo
 
-- [ ] Implementing heading indention.
-- [ ] General styling enhancements.
-- [ ] Add anchor element to next of each header.
-- [ ] Do something with the original Cayman gemfiles, perhaps delete them.
-- [ ] Make navigator style customizable through Sass variables.
+- [ ] Adjust `_config.yml` as needed.
+- [ ] Do more!
 
-## Usage
-
-To use the Cayman-Docs theme:
-
-1. If a `_config.yml` file doesn't already exists in your GitHub Pages branch, create it.
-    - Make sure you are doing this in the branch set for your GitHub Pages! It is by default *not* the master/main branch.
-1. Add the following to your site's `_config.yml`:
-
-    ```yml
-    remote_theme: Bilal2453/cayman-docs
-    ```
-    - Make sure the `theme` field is not set!
-1. There are more available options for the `_config.yml`, see below.
-
-## Customizing
-
-### Configuration variables
-
-Cayman will respect the following variables, if set in your site's `_config.yml`:
-
-```yml
-title: [The title of your site]
-description: [A short description of your site's purpose]
-```
-
-Additionally, you may choose to set the following optional variables:
-
-```yml
 show_downloads: ["true" or "false" to indicate whether to provide a download URL]
 google_analytics: [Your Google Analytics tracking ID]
 ```
 
-Cayman-Docs also provides additional variables to control varies stuff, such as:
-
-- Navigation and Table of Contents generation:
+## Template instructions
+Navigation and Table of Contents generation:
 ```yml
 navigation:
   name_over_title: [true or false to indicate whether to use the page file name instead of title in the header navigator]
@@ -69,9 +35,7 @@ navigation:
   * strip_par     (bool)   : false  - strips any parenthesis at the end of title. E.x: `find(str, index)` -> `find`.
 
 ### Stylesheet
-
 If you'd like to add your own custom styles:
-
 1. Create a file called `/assets/css/style.scss` in your site
 2. Add the following content to the top of the file, exactly as shown:
     ```scss
