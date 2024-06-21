@@ -1,6 +1,6 @@
 # DTT Documentation
 
-This repo is a form of Cayman-Docs, which is a fork of the Jekyll theme [Cayman](https://github.com/pages-themes/cayman) for GitHub Pages. 
+This repo is a fork of Cayman-Docs, which is a fork of the Jekyll theme [Cayman](https://github.com/pages-themes/cayman) for GitHub Pages. 
 
 ## Todo
 
