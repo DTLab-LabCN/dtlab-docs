@@ -1,9 +1,17 @@
-title: Cayman Docs
-description: Cayman-Docs is a clean, responsive theme for GitHub Pages based documentation.
-show_downloads: true
-theme: jekyll-theme-cayman
+# Site settings
+# This is the regis/work branch - updating this in github first, and then locally, to test things out.
+title: Digital Trust Test Bench (DTT) Documentation
+description: DTT is a QA tool for digital credential solutions
+# theme: jekyll-theme-cayman
+remote_theme: Bilal2453/cayman-docs
+show_downloads: false
+# google_analytics: [Your Google Analytics tracking ID]
+# Navigation and TOC settings
 navigation:
   name_over_title: true
   strip_par: true
   sanitize: true
   h_max: 3
+# footer_text: >
+#  <a target="_blank" href="https://www.dtlab-labcn.org/en/policy/" class="link-secondary">Policy</a> - <a target="_blank" href="https://www.dtlab-labcn.org/en/laboratory-terms-conditions/" class="link-secondary">Terms & Conditions</a>
+#  Copyright © 2024 <a target="_blank" href="https://dtlab-labcn.org" class="link-secondary">DTLab</a>. All rights reserved.
