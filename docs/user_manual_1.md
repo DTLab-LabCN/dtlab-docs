@@ -1,80 +1,44 @@
 # User manual 1
 
-## Basic text formatting
+## This is what this user manual is about
+_content to be written_
+> Inspirational quote / useful context goes here!
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+## Let's tell you about it
+### Key concepts overview
+_content to be written_
+### Relevant standards and best practices
+_content to be written_
+### Why would you want to do this
+_content to be written_
 
-There should be whitespace between paragraphs.
+## Let's show you
+### Configuring the test through the DTT web UI
+_content to be written_
+### Executing the test
+_content to be written_
+### Inspecting and reviewing the results
+_content to be written_
 
-## Quotes
+## Let's guide you through it
+### Prerequisites
+_content to be written_
+| issuer       | holder       | verifier     |
+|:-------------|:-------------|:-------------|
+| IUT1         | wallet 1     | IUT2         |
+| IUT2         | wallet 1     | IUT1         |
+| IUT1         | wallet 2     | IUT2         |
+| IUT2         | wallet 2     | IUT1         |
 
-### Blockquotes
+### Step-by-step instructions
+_content to be written_
+1.  Step **one**
+1.  Step **two**
+1.  Step **three**
+1.  Step **four**
+   
+### How to interpret the results
+_content to be written_
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Code extracts
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-## Tables
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-## Horizontal rules 
-
-* * *
-
-## Working with lists
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-This is the end of the page.
+## Where to go next
+_content to be written_
