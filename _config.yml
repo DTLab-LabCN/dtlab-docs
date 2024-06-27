@@ -7,10 +7,13 @@ show_downloads: false
 # google_analytics: [Your Google Analytics tracking ID]
 # Navigation and TOC settings
 navigation:
-  name_over_title: true
-  strip_par: true
-  sanitize: true
-  h_max: 3
-# footer_text: >
-#  <a target="_blank" href="https://www.dtlab-labcn.org/en/policy/" class="link-secondary">Policy</a> - <a target="_blank" href="https://www.dtlab-labcn.org/en/laboratory-terms-conditions/" class="link-secondary">Terms & Conditions</a>
-#  Copyright © 2024 <a target="_blank" href="https://dtlab-labcn.org" class="link-secondary">DTLab</a>. All rights reserved.
+  name_over_title: false
+  toc_parameter:
+    strip_par: true
+    sanitize: true
+    h_min: 1
+    h_max: 3
+# footer
+footer_text: >
+  <a target="_blank" href="https://www.dtlab-labcn.org/en/policy/" class="link-secondary">Policy</a> - <a target="_blank" href="https://www.dtlab-labcn.org/en/laboratory-terms-conditions/" class="link-secondary">Terms & Conditions</a>
+  Copyright © 2024 <a target="_blank" href="https://dtlab-labcn.org" class="link-secondary">DTLab</a>. All rights reserved.
