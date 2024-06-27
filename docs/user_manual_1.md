@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # User manual 1
 
 ## This is what this user manual is about
