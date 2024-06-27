@@ -24,10 +24,16 @@ _content to be written_
 _content to be written_
 
 ## Let's guide you through it
-### Prerequisites
+### Prerequisites 
 _content to be written_
+
+| Param | Type   | Description |
+|:------|:------:|:------------|
+| options | boolean/table | See Options for details. |
+
+
 | issuer       | holder       | verifier     |
-|:------------:|:------------:|:------------:|
+|:-------------|:------------:|:-------------|
 | IUT1         | wallet 1     | IUT2         |
 | IUT2         | wallet 1     | IUT1         |
 | IUT1         | wallet 2     | IUT2         |
