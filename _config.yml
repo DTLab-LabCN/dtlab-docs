@@ -13,7 +13,3 @@ navigation:
     sanitize: true
     h_min: 1
     h_max: 3
-# footer
-footer_text: >
-  <a target="_blank" href="https://www.dtlab-labcn.org/en/policy/" class="link-secondary">Policy</a> - <a target="_blank" href="https://www.dtlab-labcn.org/en/laboratory-terms-conditions/" class="link-secondary">Terms & Conditions</a>
-  Copyright © 2024 <a target="_blank" href="https://dtlab-labcn.org" class="link-secondary">DTLab</a>. All rights reserved.
