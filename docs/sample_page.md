@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Sample page
 The purpose of this page is to provide an overview of the basic markdown elements that can be used with this template to publish github pages.
 
