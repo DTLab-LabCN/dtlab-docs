@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: doc
 ---
 # DTLab's Digital Trust Testbench (DTT)
 
