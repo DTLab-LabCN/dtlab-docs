@@ -1,15 +1,14 @@
+# theme: jekyll-theme-cayman
+remote_theme: Bilal2453/cayman-docs
 # Site settings
 title: Digital Trust Test Bench (DTT) Documentation
 description: DTT is a QA tool for digital credential solutions
-# theme: jekyll-theme-cayman
-remote_theme: Bilal2453/cayman-docs
-show_downloads: false
+# show_downloads: false
 # google_analytics: [Your Google Analytics tracking ID]
 # Navigation and TOC settings
 navigation:
-  name_over_title: false
-  toc_parameter:
-    strip_par: true
-    sanitize: true
-    h_min: 1
-    h_max: 3
+  name_over_title: true
+  strip_par: true
+  sanitize: true
+  h_min: 1
+  h_max: 3
