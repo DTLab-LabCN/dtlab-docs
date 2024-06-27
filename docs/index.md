@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # DTLab's Digital Trust Testbench (DTT)
 
 <img src="images/dtt-logo.svg"  />
